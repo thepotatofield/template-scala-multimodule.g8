@@ -4,7 +4,7 @@ import Keys._
 object Settings {
 
   lazy val commonSettings = Seq(
-    organization := "$package$",
+    organization := "$organization$",
     version := "$version$" + sys.props.getOrElse("buildNumber", default=""),
     scalaVersion := "$scala_version$",
     resolvers ++= Dependencies.resolvers,
